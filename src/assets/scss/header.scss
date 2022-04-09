@@ -1,0 +1,11 @@
+header {
+  height: 15vh;
+  background-color: aquamarine;
+  .wrapper {
+      background-color: aquamarine;
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
