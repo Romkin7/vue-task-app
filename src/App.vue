@@ -1,13 +1,22 @@
-<script setup lang="ts">
-import Header from './components/Header.vue';
-import { RouterView } from "vue-router";
-</script>
-
 <template>
-  <Header />
-  <RouterView />
+  <RRHeader brandTitle="Task tracker app" />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
-<style>
-@import "@/assets/base.scss";
+<script lang="ts">
+import { defineComponent } from "vue";
+import RRHeader from "@/components/Header.vue";
+import { RouterView } from "vue-router";
+export default defineComponent({
+  components: {
+    RRHeader,
+    RouterView,
+  },
+});
+</script>
+
+<style lang="scss">
+@import "@/assets/scss/base.scss";
 </style>

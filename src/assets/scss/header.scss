@@ -1,11 +1,17 @@
+@import "@/assets/scss/foundations/colors.scss";
+
 header {
-  height: 15vh;
-  background-color: aquamarine;
-  .wrapper {
-      background-color: aquamarine;
-    nav {
-      display: flex;
-      justify-content: space-evenly;
+  height: 10vh;
+  background-color: $fireBrick;
+  box-shadow: 0 0 6px 2px rgba($black, 0.4);
+  nav {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    a {
+      color: $white;
     }
   }
 }

@@ -1,15 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <section>
+    <h2>About task tracker app</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid
+      doloribus illo maiores aliquam sit atque rem ex repellat? Sed dolore illum
+      maiores, nihil vitae suscipit neque eos officiis harum?
+    </p>
+  </section>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "AboutView",
+});
+</script>
