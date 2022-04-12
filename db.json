@@ -1,0 +1,46 @@
+{
+  "tasks": [
+    {
+      "text": "Learn Vue.js basics",
+      "done": true,
+      "reminder": false,
+      "startingDate": "2022-04-07T00:00:00.000Z",
+      "id": 1234
+    },
+    {
+      "text": "Create first Vue.js app",
+      "done": true,
+      "reminder": false,
+      "startingDate": "2022-04-08T00:00:00.000Z",
+      "id": 1235
+    },
+    {
+      "id": 3679,
+      "text": "Repair windscreen on Nissan",
+      "done": false,
+      "reminder": true,
+      "startingDate": "2022-04-14T00:00:00.000Z"
+    },
+    {
+      "id": "8432",
+      "text": "Get our lastname to the mailbox",
+      "done": false,
+      "reminder": true,
+      "startingDate": "2022-04-13T00:00:00.000Z"
+    },
+    {
+      "id": "6281",
+      "text": "Teach Finnish to wife",
+      "done": false,
+      "reminder": true,
+      "startingDate": "2022-04-12T00:00:00.000Z"
+    },
+    {
+      "id": "1728",
+      "text": "Bake Blinit for breakfast",
+      "done": false,
+      "reminder": false,
+      "startingDate": "2022-04-16T00:00:00.000Z"
+    }
+  ]
+}

@@ -1,17 +1,20 @@
 <template>
-  <RRHeader brandTitle="Task tracker app" />
+  <HeaderTag brandTitle="Task tracker app" />
   <main>
     <RouterView />
   </main>
+  <FooterTag />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import RRHeader from "@/components/Header.vue";
+import HeaderTag from "@/components/Header.vue";
+import FooterTag from "@/components/FooterTag.vue";
 import { RouterView } from "vue-router";
 export default defineComponent({
   components: {
-    RRHeader,
+    HeaderTag,
+    FooterTag,
     RouterView,
   },
 });

@@ -1,6 +1,6 @@
 <template>
   <li
-  @dblclick="$emit('toggle-reminder', task.id)"
+    @dblclick="$emit('toggle-reminder', task.id)"
     v-bind:class="[
       'task',
       task.done ? 'task--done' : '',
@@ -9,12 +9,24 @@
   >
     <div>
       <h3>{{ task.text }}</h3>
-      <date>{{ new Date(task.startingDate).toLocaleDateString("fi") }}</date>
+      <time v-bind:datetime="String(task.startingDate)">{{
+        new Date(task.startingDate).toLocaleDateString("fi")
+      }}</time>
     </div>
     <div>
-        <ButtonTag type="button" variant="orange" @click="$emit('toggle-done', task.id)">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
-        </ButtonTag>
+      <ButtonTag
+        type="button"
+        v-bind:variant="task.done ? 'green' : 'peach'"
+        @click="$emit('toggle-done', task.id)"
+      >
+        <i
+          v-bind:class="[
+            'fa',
+            task.done ? 'fa-check-square' : 'fa-check-square-o',
+          ]"
+          aria-hidden="true"
+        ></i>
+      </ButtonTag>
       <ButtonTag
         type="button"
         variant="red"

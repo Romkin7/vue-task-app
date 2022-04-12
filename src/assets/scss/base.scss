@@ -12,8 +12,15 @@ html {
     font-family: 'Poppins', sans-serif !important;
 }
 
-nav, main {
+nav, main, .footer {
     margin: 0 10rem;
+}
+main {
+    min-height: 100vh;
+}
+footer {
+    padding: 2rem 0;
+    background-color: $gray300;
 }
 
 a {
@@ -24,6 +31,7 @@ a {
 }
 
 main {
+    padding-bottom: 4rem;
     h2 {
         margin-top: 2rem;
         margin-bottom: 1rem;

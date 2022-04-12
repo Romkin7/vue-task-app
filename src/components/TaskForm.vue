@@ -11,9 +11,8 @@
           @input="updateTask"
         />
       </div>
-      <div class="col-md-4">
-        <TextInput
-          type="date"
+      <div class="col-md-6">
+        <DatePicker
           name="startingDate"
           label="Starting date"
           required="true"
@@ -21,11 +20,17 @@
           @input="updateTask"
         />
       </div>
-      <div class="col-md-2">
-        <label>
-          reminder
-          <input type="checkbox" name="reminder" v-model="reminder" />
-        </label>
+      <div class="col-md-12">
+        <div class="taskForm--checkbox">
+          <input
+            type="checkbox"
+            name="reminder"
+            v-model="reminder"
+            id="reminder"
+            checked
+          />
+          <label for="reminder">reminder</label>
+        </div>
       </div>
     </div>
     <ButtonTag
@@ -44,12 +49,14 @@ import TextInput from "@/components/TextInput.vue";
 import FormTag from "@/components/Form.vue";
 import ButtonTag from "@/components/Button.vue";
 import { events } from "@/data/events";
+import DatePicker from "./DatePicker.vue";
 export default defineComponent({
   name: "TaskForm",
   components: {
     FormTag,
     TextInput,
     ButtonTag,
+    DatePicker,
   },
   data() {
     return {
@@ -69,6 +76,10 @@ export default defineComponent({
         startingDate: this.startingDate,
         reminder: this.reminder,
       });
+
+      this.text = "";
+      this.startingDate = "";
+      this.reminder = false;
     },
   },
   emits: events,

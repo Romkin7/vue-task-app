@@ -1,0 +1,19 @@
+@import '@/assets/scss/foundations/colors.scss';
+
+.datePicker {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        border: 2px solid rgba($steelBlue, 0.7);
+        border-radius: 6px;
+        padding: 1rem 1.9rem;
+        background-color: $white;
+        color: $black;
+        transition: border-color 150ms ease-in;
+
+        &:hover {
+            border-color: $steelBlue;
+        }
+    }
+}

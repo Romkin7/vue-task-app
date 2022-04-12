@@ -14,7 +14,7 @@
 import { defineComponent } from "vue";
 import { RouterLink } from "vue-router";
 export default defineComponent({
-  name: "RRHeader",
+  name: "HeaderTag",
   props: {
     brandTitle: String,
   },

@@ -1,6 +1,12 @@
 export type ButtonTypes = "submit" | "button" | "reset";
-export type InputTypes = "text" | "email" | "number" | "tel" | "password" | "date";
-export type ButtonVariants = "green" | "orange" | "blue" | "red";
+export type InputTypes = "text" | "email" | "number" | "tel" | "password";
+export type ButtonVariants =
+  | "green"
+  | "orange"
+  | "blue"
+  | "red"
+  | "peach"
+  | "indogo";
 export type Events =
   | "create-task"
   | "delete-task"
